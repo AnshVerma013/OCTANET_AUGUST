@@ -1,0 +1,282 @@
+/* Additional global styles */
+
+body {
+    line-height: 1.6;
+    scroll-behavior: smooth; /* Smooth scroll behavior */
+}
+
+/* Header styles */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 20px;
+    cursor: pointer; /* Show pointer cursor on hover */
+}
+
+nav {
+    display: none; /* Hide navigation menu on larger screens */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Mobile navigation menu styles */
+
+.mobile-nav {
+    display: none;
+    background-color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+.mobile-nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.mobile-nav li {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.mobile-nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Toggle button styles for mobile navigation */
+
+.toggle-btn {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer; /* Show pointer cursor on hover */
+    z-index: 101;
+}
+
+.toggle-btn .bar {
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    margin: 6px 0;
+}
+
+/* Show navigation menu on mobile devices */
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    /* Show mobile navigation menu */
+    .mobile-nav {
+        display: block;
+    }
+
+    .toggle-btn {
+        display: block;
+    }
+}
+
+/* Hero section styles */
+
+#hero {
+    background-image: url('hero.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 200px 0;
+    color: #000000;
+}
+
+#hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 24px;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+/* Parallax effect */
+#features, #pricing, footer {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Features section styles */
+
+#features {
+    background-image: url('features.jpg');
+    background-size: cover;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.feature {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature i {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.feature h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Pricing section styles */
+
+#pricing {
+    background-image: url('pricing.jpg');
+    background-size: cover;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.price {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.price h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.price p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.price ul {
+    list-style: none;
+    padding: 0;
+}
+
+.price li {
+    margin-bottom: 10px;
+}
+
+.price.recommended {
+    background-color: #d9f2ff;
+}
+
+/* Footer styles */
+
+footer {
+    background-image: url('footer.jpg');
+    background-size: cover;
+    padding: 100px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 20px;
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+footer form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+footer input,
+footer textarea,
+footer button {
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+}
+
+/* Responsive design for mobile devices */
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    nav li {
+        margin-right: 10px;
+    }
+
+    #hero {
+        padding: 150px 0;
+    }
+
+    #hero h2 {
+        font-size: 36px;
+    }
+
+    #hero p {
+        font-size: 18px;
+    }
+
+    .feature, .price {
+        width: 100%;
+    }
+
+    /* Hide navigation menu on larger screens */
+    .mobile-nav {
+        display: none;
+    }
+}
+
